@@ -37,7 +37,16 @@ def rectangle(turtle):
 
 def parallelogram(turtle):
     turtle.clear()
-    pass
+    turtle.begin_fill()
+    turtle.goto(100,0)
+    turtle.goto(150,100)
+    turtle.goto(50,100)
+    turtle.goto(0,0)
+    # turtle.goto(100,100)
+    # turtle.goto(200,100)
+    # turtle.goto(100,0)
+    # turtle.goto(0,0)
+    turtle.end_fill
 
 
 
@@ -75,6 +84,7 @@ while True:
                             rectangle(pen)
                         else:
                             print("Parallelogram")
+                            parallelogram(pen)
                 elif parallel == "2":
                     print("trapezoid")
                     trapezoid(pen)
